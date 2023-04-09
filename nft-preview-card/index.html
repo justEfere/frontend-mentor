@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Font Family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Font Family -->
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main>
+    <a class="eth-img" aria-label="Click link to open NFT item" href="#">
+      <img src="images/image-equilibrium.jpg" class="header-img" alt="NFT image">
+      <div class="view-cointainer">
+        <img src="images/icon-view.svg" alt="view icon" class="view">
+      </div>
+      <div class="cyan-cover"></div>
+    </a>
+
+
+
+    <div class="body">
+      <a href="#" class="eth-title">Equilibrium #3429</a>
+      <p class="eth-info">Our Equilibrium collection promotes balance and calm.</p>
+
+      <div class="price-timeframe">
+        <div class="price">
+          <img src="images/icon-ethereum.svg" alt="ethereum icon" class="icon">
+          <p class="price-amount" aria-label="cost price for the NFT selected">0.041 ETH</p>
+        </div>
+        <div class="timeframe" aria-label="time left until NFT bidding elapses">
+          <img src="images/icon-clock.svg" alt="clock icon" class="icon" aria-label="clock icon">
+          <p aria-label="3 days left until NFT bidding ends" class="timelapse">3 days left</p>
+        </div>
+      </div>
+
+      <div class="creator-info">
+        <img src="images/image-avatar.png" alt="profile image of Jules Wyvern"
+          aria-label="Profile imagee of Jules Wyvern" class="profile-img">
+        <p aria-label="name of NFT creator" class="creator-name">Creation of <a
+            aria-label="open link to view Jules Wyvern profile" href="#" class="span">Jules Wyvern</a></p>
+      </div>
+    </div>
+
+
+  </main>
+
+
+</body>
+
+</html>

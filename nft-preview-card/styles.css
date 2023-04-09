@@ -1,0 +1,162 @@
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+    --font-family: 'Outfit', sans-serif;
+}
+
+/* STYLE GUIDE */
+/* - Font size (paragraph): 18px */
+/* - Weights: 300, 400, 600 */
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-weight: 400;
+    font-size: 62.5%;
+    font-family: var(--font-family)
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-dark-blue-main-BG);
+}
+
+main {
+    display: grid;
+    grid-template-rows: repeat(1fr, 2);
+    max-width: 30rem;
+    background-color: var(--Very-dark-blue-card-BG);
+    padding: 2rem;
+    font-size: 1.8rem;
+    border-radius: 10px;
+}
+
+.eth-img {
+    position: relative;
+}
+
+
+.cyan-cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    background-color: var(--Cyan);
+    opacity: 0;
+    border-radius: 10px;
+}
+
+
+.view {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0;
+}
+
+.header-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+
+.body {
+    width: 100%;
+    color: var(--Soft-blue);
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.eth-title {
+    font-size: 2.5rem;
+    color: var(--White);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.eth-info {
+    line-height: 1.5;
+}
+
+.price-timeframe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.price,
+.timeframe {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.price {
+    color: var(--Cyan);
+    font-weight: 600;
+}
+
+.creator-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-top: 1px solid var(--Very-dark-blue-line);
+    padding-top: 2rem;
+}
+
+.profile-img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    border: 1px solid var(--White);
+}
+
+.span {
+    color: var(--White);
+    text-decoration: none;
+}
+
+.eth-info,
+.timelapse,
+.creator-name {
+    font-weight: 300;
+}
+
+/* HOVER STATE */
+.eth-title:hover,
+.span:hover {
+    color: var(--Cyan);
+}
+
+.eth-img:hover .view {
+    opacity: 1;
+}
+
+.eth-img:hover .cyan-cover {
+    opacity: 0.5;
+}
