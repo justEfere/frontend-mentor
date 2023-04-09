@@ -134,6 +134,9 @@ h2 {
     color: var(--Desaturated-blue);
     text-decoration: none;
 }
+.cancel:hover {
+    color: var(--Button-hover);
+}
 
 a:hover {
     cursor: pointer;
