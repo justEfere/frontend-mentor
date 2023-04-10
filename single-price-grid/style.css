@@ -55,11 +55,8 @@ body {
 .card {
     padding: 2rem;
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
     gap: 2rem;
     flex-direction: column;
-    /* background-color: red; */
 }
 
 /* first card */
@@ -116,6 +113,10 @@ span {
     font-weight: 700;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
     display: block;
+}
+
+.signup:hover {
+    box-shadow: none;
 }
 
 
