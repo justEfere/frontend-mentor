@@ -29,8 +29,8 @@ Users should be able to:
 ![](./screen-mobile.png)
 
 
-- Solution URL: [Add solution URL here](https://github.com/justEfere/frontend-mentor/tree/main/3-column-card)
-- Live Site URL: [Add live site URL here](https://github.com/justEfere/frontend-mentor/3-column-card/)
+- Solution URL: [Github Repo](https://github.com/justEfere/frontend-mentor/tree/main/3-column-card)
+- Live Site URL: [live site](https://justefere.github.io/frontend-mentor/3-column-card/)
 
 ## My process
 
