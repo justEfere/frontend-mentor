@@ -25,13 +25,13 @@ Users should be able to:
 ### Screenshot
 
 ![](./stat-pre-desktop.png)
-![](./mobile.png.png)
+![](./mobile.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/justEfere/frontend-mentor/tree/main/Stats-preview-card-component)
-- Live Site URL: [Add live site URL here](https://github.com/justEfere/frontend-mentor/Stats-preview-card-component)
+- Solution URL: [Solution URL](https://github.com/justEfere/frontend-mentor/tree/main/Stats-preview-card-component)
+- Live Site URL: [live site URL](https://github.com/justEfere/frontend-mentor/Stats-preview-card-component)
 
 ## My process
 
@@ -54,4 +54,3 @@ Users should be able to:
 - Twitter - [@justefere](https://www.twitter.com/justefere)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
