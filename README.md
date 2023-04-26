@@ -28,7 +28,7 @@ This challenges has help me become consistent and helped me to code on a daily b
 - Huddle-landing-page: [View](https://justefere.github.io/frontend-mentor/Huddle-landing-page/)
 - QR-Code-Component: [View](https://justefere.github.io/frontend-mentor/QR-Code-Component/)
 - Stats-preview-card-component: [View](https://justefere.github.io/frontend-mentor/Stats-preview-card-component/)
-- nft-preview-card: [View](httpshttps://justefere.github.io/frontend-mentor/nft-preview-card/)
+- nft-preview-card: [View](https://justefere.github.io/frontend-mentor/nft-preview-card/)
 - order-summary: [View](https://justefere.github.io/frontend-mentor/order-summary/)
 - product-preview-card: [View](https://justefere.github.io/frontend-mentor/product-preview-card/)
 - profile-card-component: [View](https://justefere.github.io/frontend-mentor/profile-card-component/)
