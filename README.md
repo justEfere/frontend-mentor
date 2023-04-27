@@ -35,7 +35,8 @@ This challenges has help me become consistent and helped me to code on a daily b
 - results-summary-component: [View](https://justefere.github.io/frontend-mentor/results-summary-component)
 - single-price-grid: [View](https://justefere.github.io/frontend-mentor/single-price-grid/)
 - social-proof-section: [View](https://justefere.github.io/frontend-mentor/social-proof-section)
-
+- Clipboard Landing Page: [View](https://justefere.github.io/frontend-mentor/Clipboard-Landing-page)
+- chat-app-illustration: [View](https://justefere.github.io/frontend-mentor/chat-app-illustration)
 
 
 ## My process
