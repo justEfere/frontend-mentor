@@ -24,10 +24,14 @@ This challenges has help me become consistent and helped me to code on a daily b
 ### Links
 
 - 3-Column-Card: [View](https://justefere.github.io/frontend-mentor/3-column-card/)
+- Clipboard Landing Page: [View](https://justefere.github.io/frontend-mentor/Clipboard-Landing-page)
 - Four-card-feature-section: [View](https://justefere.github.io/frontend-mentor/Four-card-feature-section)
+- Fylo-data-storage-component: [View](https://justefere.github.io/frontend-mentor/Fylo-data-storage-component)
 - Huddle-landing-page: [View](https://justefere.github.io/frontend-mentor/Huddle-landing-page/)
 - QR-Code-Component: [View](https://justefere.github.io/frontend-mentor/QR-Code-Component/)
 - Stats-preview-card-component: [View](https://justefere.github.io/frontend-mentor/Stats-preview-card-component/)
+- Testimonial-Grid-Section: [View](https://justefere.github.io/frontend-mentor/Testimonial-Grid-Section)
+- chat-app-illustration: [View](https://justefere.github.io/frontend-mentor/chat-app-illustration)
 - nft-preview-card: [View](https://justefere.github.io/frontend-mentor/nft-preview-card/)
 - order-summary: [View](https://justefere.github.io/frontend-mentor/order-summary/)
 - product-preview-card: [View](https://justefere.github.io/frontend-mentor/product-preview-card/)
@@ -35,8 +39,7 @@ This challenges has help me become consistent and helped me to code on a daily b
 - results-summary-component: [View](https://justefere.github.io/frontend-mentor/results-summary-component)
 - single-price-grid: [View](https://justefere.github.io/frontend-mentor/single-price-grid/)
 - social-proof-section: [View](https://justefere.github.io/frontend-mentor/social-proof-section)
-- Clipboard Landing Page: [View](https://justefere.github.io/frontend-mentor/Clipboard-Landing-page)
-- chat-app-illustration: [View](https://justefere.github.io/frontend-mentor/chat-app-illustration)
+
 
 
 ## My process
