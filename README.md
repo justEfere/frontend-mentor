@@ -27,6 +27,7 @@ This challenges has help me become consistent and helped me to code on a daily b
 - Clipboard Landing Page: [View](https://justefere.github.io/frontend-mentor/Clipboard-Landing-page)
 - Four-card-feature-section: [View](https://justefere.github.io/frontend-mentor/Four-card-feature-section)
 - Fylo-data-storage-component: [View](https://justefere.github.io/frontend-mentor/Fylo-data-storage-component)
+- Huddle-front-page: [View](https://justefere.github.io/frontend-mentor/Huddle-front-page/)
 - Huddle-landing-page: [View](https://justefere.github.io/frontend-mentor/Huddle-landing-page/)
 - QR-Code-Component: [View](https://justefere.github.io/frontend-mentor/QR-Code-Component/)
 - Stats-preview-card-component: [View](https://justefere.github.io/frontend-mentor/Stats-preview-card-component/)
