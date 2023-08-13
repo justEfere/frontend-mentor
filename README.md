@@ -33,6 +33,7 @@ This challenges has help me become consistent and helped me to code on a daily b
 - Stats-preview-card-component: [View](https://justefere.github.io/frontend-mentor/Stats-preview-card-component/)
 - Testimonial-Grid-Section: [View](https://justefere.github.io/frontend-mentor/Testimonial-Grid-Section)
 - chat-app-illustration: [View](https://justefere.github.io/frontend-mentor/chat-app-illustration)
+- fylo-landing-page: [View](https://justefere.github.io/frontend-mentor/fylo-landing-page-with-two-column-layout-master)
 - nft-preview-card: [View](https://justefere.github.io/frontend-mentor/nft-preview-card/)
 - order-summary: [View](https://justefere.github.io/frontend-mentor/order-summary/)
 - product-preview-card: [View](https://justefere.github.io/frontend-mentor/product-preview-card/)
