@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+
+    /* ### Neutral */
+
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+    /* ### Gradients */
+
+    /* --Linear-135deg-from hsl(0, 0%, 100%), to hsl(0, 100%, 98%) */
+    /* --Linear-135deg-from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+
+    --Font-size: 16px;
+
+    /* ### Font */
+    --Josefin-Sans: 'Josefin Sans', sans-serif;
+
+    /* - Weights: 300, 400, 600 */
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-weight: 300;
+    font-size: 62.5%;
+    font-family: var(--Josefin-Sans);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+
+    width: 100%;
+    /* border: 2px solid red; */
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+    /* padding: 20px; */
+    /* height: auto; */
+}
+
+.header {
+    padding: 20px;
+}
+
+.hero-img {
+    background-image: url(images/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, hsl(0, 24%, 93%), hsl(0, 100%, 98%)), linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: 400;
+    width: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    /* background-color: pink; */
+}
+
+.wine {
+    color: var(--Desaturated-Red);
+    font-weight: 300;
+}
+
+.body-text {
+    text-align: center;
+    color: var(--Desaturated-Red);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+form {
+    border: 1px solid var(--Desaturated-Red);
+    border-radius: 30px;
+    background: none;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 20px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input {
+    background: none;
+    border: none;
+    width: 60%;
+    height: 30px;
+    /* color: var(--Desaturated-Red); */
+    outline: none;
+    /* font-size: 15px; */
+}
+
+input::placeholder {
+    color: var(--Desaturated-Red);
+}
+
+.click {
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 20px 28px;
+    border-radius: 30px;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    box-shadow: 2px 2px 10px hsl(0, 80%, 86%);
+    cursor: pointer;
+}
+
+.click:hover {
+    box-shadow: 5px 5px 10px 5px hsla(0, 80%, 86%, 0.696);
+}
+
+.warning-msg,
+.warning-icon {
+    display: none;
+}
+
+.warning-msg {
+    position: absolute;
+    bottom: -22px;
+    color: var(--Soft-Red);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+
+@media screen and (min-width: 700px) {
+    .card {
+        width: 70rem;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        background: url(images/bg-pattern-desktop.svg), linear-gradient(135deg, hsl(0, 53%, 97%), hsl(0, 100%, 98%));
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .hero-img {
+        grid-column: 2/-1;
+        grid-row: 1/3;
+        height: 100%;
+        background-image: url(images/hero-desktop.jpg);
+    }
+
+    .heading {
+        width: auto;
+    }
+
+    .heading,
+    .body-text {
+        text-align: left;
+    }
+
+    .body {
+        background: none;
+    }
+
+    .body,
+    .header {
+        padding: 30px 10%;
+
+    }
+
+    input {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .card {
+        width: 90rem;
+    }
+
+    .body {
+        gap: 30px;
+    }
+
+    .body,
+    .header {
+        padding: 30px 10%;
+    }
+
+    .heading {
+        font-size: 50px;
+    }
+
+    .body-text {
+        font-size: 16px;
+    }
+
+    input,
+    input::placeholder {
+        font-size: 16px;
+    }
+
+    input {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .card {
+        width: 120rem;
+    }
+
+    .body,
+    .header {
+        padding: 30px 15%;
+    }
+
+    .heading {
+        font-size: 60px;
+    }
+
+    .body-text {
+        font-size: 20px;
+    }
+
+    input {
+        width: 80%;
+    }
+}
