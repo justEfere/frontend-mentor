@@ -13,13 +13,13 @@
 
 *,
 *::before,
-*::after{
- margin: 0;
- padding: 0;
- box-sizing: border-box;   
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
     font-weight: 300;
     font-family: var(--font-family);
@@ -36,8 +36,6 @@ body {
 main {
     min-width: 32rem;
     max-width: 120rem;
-    border: 1px solid red;
-    /* background-color: red; */
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -54,7 +52,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
 }
 
 .header-title {
@@ -70,21 +68,16 @@ main {
 }
 
 .text {
-    font-weight: 600;
+    /* font-weight: 600; */
     color: var(--Gray);
 }
-
-.img-container img{
-    width: 100%;
-}
-
 
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    width: 100%;
+    width: 90%;
     padding: 0 10px;
 }
 
@@ -113,9 +106,16 @@ input:first-child {
     margin-bottom: 0;
 }
 
+.email-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 #email {
     background: none;
 }
+
 #submit {
     background-color: var(--Blue);
     color: #fff;
@@ -133,14 +133,32 @@ input.error {
     outline-color: red;
 }
 
-.error {
-    color:  rgb(213, 10, 10);
-    margin-bottom: 10px;
+.hidden {
     display: none;
+}
+
+.success {
+    border: 1px solid #3ec53e;
+    background-color: #fff;
+    color: #000;
+}
+
+.error {
+    color: rgb(213, 10, 10);
+    margin-bottom: 10px;
 }
 
 .hero {
     margin-bottom: 4rem;
+}
+
+.img-container {
+    max-width: 120rem;
+    padding: 1rem;
+}
+
+.img-container img {
+    width: 100%;
 }
 
 .social {
@@ -164,8 +182,64 @@ input.error {
     font-size: 2rem;
 }
 
+.social-icon:hover {
+    background-color: var(--Blue);
+    color: #fff;
+}
+
 .p-footer {
     margin-top: 3rem;
     font-size: 1.2rem;
     color: var(--Gray);
+}
+
+@media (min-width: 600px) {
+    .header {
+        max-width: 60rem;
+        width: 100%;
+        padding: 0 3rem;
+        margin-bottom: 3rem;
+    }
+
+    form {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .email-input {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #submit {
+        width: 40%;
+        align-self: flex-start;
+    }
+
+    small {
+        margin-left: 20px;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+
+    /* fontsizes */
+    .header-title {
+        font-size: 5rem;
+    }
+
+    input,
+    small,
+    .text {
+        font-size: 2rem;
+    }
+
+    .p-footer {
+        font-size: 2rem;
+    }
+
+
 }
