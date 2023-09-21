@@ -17,7 +17,7 @@ async function changeQuote() {
     inter = setInterval(() => {
         const quote = data[random(0, data.length - 1)];
         quoteP.innerHTML = `"${quote.text}"`;
-    }, 5000);
+    }, 2000);
 
 }
 
