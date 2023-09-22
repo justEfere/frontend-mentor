@@ -1,0 +1,417 @@
+:root {
+    --font-family: 'Montserrat', sans-serif;
+    --time-font: 'Oswald', sans-serif;
+
+    --white: #e4dcdc;
+    --primary-blue: #150E28;
+    --primary-purple: #903AFF;
+    --primary-pink: #D434FE;
+    --primary: linear-gradient(to right, #D434FE, #903AFF);
+}
+
+body {
+    font-weight: 600;
+}
+
+#rel-blur-1 {
+    position: relative;
+}
+
+.contact-blur-1 {
+    top: 20%;
+    left: 20%;
+}
+
+.contact-blur-2 {
+    left: 90%;
+    top: 90%;
+    visibility: hidden;
+}
+
+.desktop-form {
+    display: none;
+}
+
+/* //! positioning stars */
+#rel-20,
+#rel-21,
+#rel-22,
+#rel-23 {
+    position: relative;
+}
+
+.star-33 {
+    left: 70%;
+    top: 2%;
+}
+
+.star-34 {
+    left: 90%;
+    top: 16%;
+}
+
+.star-35 {
+    top: 84%;
+    left: -2%;
+}
+
+.star-36 {
+    left: 100%;
+    top: 76%;
+}
+
+.star-37 {
+    top: -10%;
+    left: 10%;
+}
+
+.star-38 {
+    left: 80%;
+    top: -5%;
+}
+
+.star-39 {
+    left: -2%;
+    top: 80%;
+}
+
+.star-40 {
+    left: 80%;
+    top: 103%;
+}
+
+/*! JS error State  */
+.errorM {
+    font-size: 8px;
+    color: #e2450c;
+}
+
+/* ! end star */
+
+
+/* material-symbols-outlined */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.back-button {
+    height: 35px;
+    width: 35px;
+    border: 1px solid var(--primary-pink);
+    border-radius: 50%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    margin-bottom: 5rem;
+    /* font-size: 10px; */
+}
+
+.contact-title {
+    font-size: 16px;
+    color: var(--primary-pink);
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+
+.mobile-form {
+    width: 80%;
+    /* padding: 20px; */
+    /* border: 1px solid white; */
+}
+
+.contact-text {
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.form-group input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    outline: none;
+    border: 1px solid var(--white);
+    color: var(--white);
+    border-radius: 5px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#m-message:focus #focus {
+    border: 1px solid var(--primary-pink);
+}
+
+.form-group input:focus,
+textarea:focus .textarea {
+    border: 1px solid var(--primary-pink);
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+
+}
+
+textarea {
+    padding-bottom: 10px;
+}
+
+textarea {
+    border: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--white);
+    font-family: var(--font-family);
+}
+
+textarea::placeholder {
+    font-family: var(--font-family);
+}
+
+.textarea {
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    padding-top: 5px;
+    margin-bottom: 3rem;
+}
+
+input[type="submit"] {
+    outline: none;
+    border: 1px solid transparent;
+    color: var(--white);
+    width: 15rem;
+    padding: 15px 40px;
+    background: linear-gradient(to right, #903AFF, #D434FE);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: center;
+}
+
+input[type="submit"]:hover {
+    background: transparent;
+    border: 1px solid var(--primary-pink);
+}
+
+.form-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.share {
+    color: var(--primary-pink);
+    margin-bottom: 5px;
+}
+
+.form-link:not(:last-child) {
+    margin-right: 8px;
+}
+
+.insta {
+    cursor: pointer;
+}
+
+
+
+
+h2 {
+    color: var(--primary-pink);
+}
+
+
+@media (min-width: 600px) {
+
+    .contact-blur-2 {
+        left: 90%;
+        top: 90%;
+        visibility: visible;
+    }
+
+    .mobile-form {
+        display: none;
+    }
+
+    /* error state */
+    .errorM {
+        font-size: 14px;
+    }
+
+    .desktop-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        /* border: 1px solid wheat; */
+        padding: 1rem;
+    }
+
+    body,
+    .contact-title,
+    input,
+    input::placeholder,
+    textarea::placeholder {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .get-intouch {
+        /* border: 1px solid red; */
+        padding: 10px;
+    }
+
+    .con-in {
+        margin-top: 5px;
+    }
+
+    .desktop-form-container {
+        /* border: 1px solid red; */
+        border-radius: 3px;
+        background-color: rgba(244, 238, 245, 0.039);
+        padding: 10px;
+    }
+
+
+    .form-group,
+    textarea {
+        margin-bottom: 16px;
+    }
+
+    textarea {
+        border: 1px solid var(--white);
+    }
+
+    .form-footer {
+        display: block;
+        text-align: left;
+    }
+
+    .contact-form {
+        padding: 5rem 0;
+    }
+
+    .footer-container {
+        margin-top: 0;
+    }
+
+
+}
+
+@media (min-width: 700px) {
+    .desktop-form-container {
+        padding: 20px;
+    }
+
+    .desktop-form {
+        column-gap: 10px;
+    }
+}
+
+@media (min-width:900px) {
+    .desktop-form {
+        width: 80%;
+        column-gap: 10px;
+    }
+
+    .header-container {
+        border-bottom: 0.1px solid var(--primary-purple);
+    }
+
+    .desktop-form-container {
+        padding: 30px;
+    }
+
+    .con-in {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    body,
+    .contact-title,
+    input,
+    input::placeholder,
+    textarea::placeholder {
+        font-size: 20px;
+    }
+
+    .form-group,
+    textarea {
+        margin-bottom: 22px;
+    }
+
+    .get-intouch {
+        padding: 30px;
+    }
+
+    .desktop-form-container {
+        padding: 60px;
+    }
+
+    input[type="submit"] {
+        padding: 20px 60px;
+        width: 20rem;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .form-group input,
+    textarea {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .desktop-form {
+        max-width: 120rem;
+        /* border: 1px solid red; */
+    }
+
+    body,
+    .contact-title,
+    input,
+    input::placeholder,
+    textarea::placeholder {
+        font-size: 25px;
+    }
+
+    .get-intouch {
+        padding-top: 50px;
+    }
+
+    .form-group,
+    textarea {
+        margin-bottom: 30px;
+    }
+
+    .contact-title {
+        margin-bottom: 50px;
+    }
+
+    .form-group input,
+    textarea {
+        padding: 30px;
+    }
+
+    .con-in {
+        margin-bottom: 25px;
+    }
+}
