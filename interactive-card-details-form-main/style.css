@@ -99,13 +99,11 @@ body {
     top: 58px;
 }
 
-/*  */
 .attribution {
     text-align: center;
     margin: 0 auto;
     background-color: var(--White);
 }
-/*  */
 
 .card-info-container {
     position: relative;
