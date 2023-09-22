@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Frontend Mentor | Interactive card details form</title>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="container">
+    <div class="card">
+      <div class="card-img-one">
+        <div class="card-one-info-container">
+          <p class="cvs"></p>
+        </div>
+      </div>
+
+      <div class="card-img-two">
+        <div class="card-info-container">
+          <div class="card-info-header">
+            <div class="circle-lg"></div>
+            <div class="circle-sm"></div>
+          </div>
+          <div class="card-info-body">
+            <p class="num"></p>
+          </div>
+          <div class="card-info-footer">
+            <div class="card-name">
+              <p class="name"></p>
+            </div>
+            <div class="expr">
+              <p class="month"></p>
+              <span class="div"></span>
+              <p class="year"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form">
+      <form id="form" novalidate>
+        <div class="form-group">
+          <label for="card-holder">cardholder name</label>
+          <input type="text" name="cardName" maxlength="35" id="card-holder" placeholder="e.g. Jane Appleseed" />
+          <small class="error">Invalid name</small>
+        </div>
+
+        <div class="form-group">
+          <label for="card-number">card number</label>
+          <input type="text" name="cardNumber" id="card-number" maxlength="16" placeholder="e.g. 1234 5678 9123 0000" />
+          <small class="error">Wrong format, numbers only</small>
+        </div>
+
+        <div class="sec-exp">
+          <div class="expiration-date">
+            <label for="exp-month" class="exp-label">exp. date (mm/yy)</label>
+            <div id="expiration" class="row">
+              <div class="form-group">
+                <input type="text" name="exp-month" maxlength="2" id="exp-month" placeholder="MM" />
+                <small class="error">Can't be blank</small>
+              </div>
+
+              <div class="form-group">
+                <input type="text" name="exp-year" maxlength="2" id="exp-year" placeholder="YY" />
+                <small class="error">Can't be blank</small>
+              </div>
+            </div>
+          </div>
+          <div class="cvc-digit">
+            <div class="form-group">
+              <label for="cvc-digit" class="exp-label">cvc</label>
+              <input type="text" maxlength="3" id="cvc-digit" placeholder="e.g. 123" />
+              <small class="error">Can't be blank</small>
+            </div>
+          </div>
+        </div>
+        <input type="submit" value="Confirm" class="submit" />
+      </form>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your
+      Name Here</a>.
+  </div>
+</body>
+
+</html>
