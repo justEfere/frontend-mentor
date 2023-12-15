@@ -193,6 +193,14 @@ h1 {
     ;
     opacity: .5;
 }
+.item_title {
+    width: 80%;
+    overflow-x: scroll;
+}
+
+.item_title::-webkit-scrollbar {
+    display: none;
+}
 
 .cancel img {
     width: 15px;
