@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Bright-Blue: hsl(220, 98%, 61%);
+    --Check-Background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+
+    /* ### Neutral */
+
+    /* ### Light Theme */
+
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+    --Light-Grayish-Blue: hsl(233, 11%, 84%);
+    --Dark-Grayish-Blue: hsl(236, 9%, 61%);
+    --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+
+    /* ### Dark Theme */
+
+    --Very-Dark-Blue: hsl(235, 21%, 11%);
+    --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+    --Light-Grayish-Blue: hsl(234, 39%, 85%);
+    --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
+    --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+    --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+    --Very-Dark-Grayish-Blue-2: hsl(237, 14%, 26%);
+
+    /* ## Typography */
+    --font-family: 'Josefin Sans', sans-serif;
+
+
+    --Font-size: 1.4rem;
+
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-weight: 400;
+    font-size: 62.5%;
+    font-family: var(--font-family);
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--Very-Dark-Blue);
+    /* color: var(--Light-Grayish-Blue);
+    background-image: url(images/bg-mobile-dark.jpg); */
+    /* background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: top; */
+    position: relative;
+}
+
+.head-bg {
+    position: absolute;
+    top: -20px;
+    transform: translateY(-20px);
+    width: 100%;
+    z-index: -1;
+    /* border: 1px solid red; */
+}
+
+.img-mood {
+    height: 100%;
+}
+
+.head-bg img {
+    height: 22rem;
+    width: 100%;
+}
+
+main {
+    min-width: 30rem;
+    width: 90%;
+    max-width: 50rem;
+    margin: auto;
+    padding: 1rem 0;
+    max-height: 100vh;
+    /* border: 1px solid red; */
+}
+
+
+.title_area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: var(--Very-Light-Gray);
+    letter-spacing: 8px;
+}
+
+.add_item,
+.items_container {
+    background-color: var(--Very-Dark-Desaturated-Blue);
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: .1rem .1rem 1rem rgba(0, 0, 0, 0.1), -.1rem .1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.add_item {
+    padding: 1rem 1.5rem;
+}
+
+.add_new_form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.add_new_form input {
+    width: 90%;
+    padding: 2px 5px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid transparent;
+    outline: none;
+    color: var(--Light-Grayish-Blue);
+}
+
+#input_new {
+    /* font-size: 1.6rem; */
+    caret-color: var(--Bright-Blue);
+}
+
+.check {
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid var(--Very-Dark-Grayish-Blue);
+    border-radius: 100%;
+}
+
+.item_list {
+    width: 100%;
+    overflow-y: scroll;
+    max-height: 50vh;
+}
+
+.item_list::-webkit-scrollbar {
+    display: none;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 1.5rem;
+    gap: 1rem;
+    width: 100%;
+    border-bottom: 1px solid var(--Light-Grayish-Blue);
+    margin: auto;
+}
+
+.item .check {
+    cursor: pointer;
+}
+
+.item .cancel {
+    margin-left: auto;
+    /* transition: all 5s; */
+}
+
+.item .check:hover {
+    border-color: var(--Check-Background);
+}
+
+.checked {
+    background: url(images/icon-check.svg), linear-gradient(115deg, hsl(192, 100%, 67%) 10%, hsl(280, 87%, 65%));
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.cleared .item_title {
+    text-decoration: line-through;
+    color: var(--Very-Dark-Grayish-Blue);
+    ;
+    opacity: .5;
+}
+
+.item_title {
+    max-width: 80%;
+    overflow-x: scroll;
+}
+
+.item_title::-webkit-scrollbar {
+    display: none;
+}
+
+.cancel img {
+    width: 15px;
+    cursor: pointer;
+}
+
+.item a {
+    text-decoration: none;
+    color: var(--Light-Grayish-Blue-hover);
+}
+
+.item a:hover {
+    color: var(--Light-Grayish-Blue);
+}
+
+.setup_buttons {
+    /* margin-top: 2rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    color: var(--Very-Dark-Grayish-Blue);
+}
+
+.setup_buttons a {
+    color: var(--Very-Dark-Grayish-Blue);
+    text-decoration: none;
+}
+
+.setup_buttons a:hover,
+.sort a:hover {
+    color: var(--Light-Grayish-Blue-hover);
+}
+
+.sort {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.sort a {
+    color: var(--Very-Dark-Grayish-Blue);
+    text-decoration: none;
+}
+
+.mobile_sort {
+    padding: 1rem;
+    background-color: var(--Very-Dark-Desaturated-Blue);
+    border-radius: 5px;
+    box-shadow: .1rem .1rem 1rem rgba(0, 0, 0, 0.1), -.1rem .1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.sort .sorted {
+    color: var(--Bright-Blue);
+}
+
+.sort .sorted:hover {
+    color: var(--Bright-Blue);
+}
+
+.sorted {
+    color: var(--Bright-Blue);
+}
+
+.drag {
+    color: var(--Very-Dark-Grayish-Blue);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.hide_mobile {
+    display: none;
+}
+
+
+@media (min-width: 600px) {
+
+    body,
+    input {
+        font-size: 1.8rem;
+    }
+
+    main {
+        max-width: 60rem;
+        padding: 2rem 0;
+    }
+
+    .head-bg {
+        top: 0;
+        transform: translateY(0);
+    }
+
+    h1 {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+
+    .add_item,
+    .item {
+        padding: 1.8rem;
+    }
+
+    .hide_mobile {
+        display: unset;
+    }
+
+    .sort a:not(:last-child) {
+        margin-right: 1.5rem;
+    }
+
+    .cancel img {
+        width: 20px;
+    }
+
+    .mobile_sort {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    body,
+    input {
+        font-size: 2.4rem;
+    }
+
+    main {
+        max-width: 80rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+
+    .add_item,
+    .item,
+    .setup_buttons {
+        padding: 2.2rem;
+    }
+
+    .item {
+        gap: 2rem;
+    }
+
+    .check {
+        height: 3rem;
+        width: 3rem;
+    }
+}
