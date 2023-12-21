@@ -92,7 +92,9 @@ window.addEventListener("load", () => {
     })
 })
 
-daily.addEventListener("click", (e) => {
+const useNormal = "";
+
+daily.addEventListener(useNormal, (e) => {
     e.preventDefault();
     removeSelected();
     daily.classList.add("selected");
@@ -106,7 +108,7 @@ daily.addEventListener("click", (e) => {
         changeBgUI();
     })
 });
-weekly.addEventListener("click", (e) => {
+weekly.addEventListener(useNormal, (e) => {
     e.preventDefault();
     removeSelected();
     weekly.classList.add("selected");
@@ -120,7 +122,8 @@ weekly.addEventListener("click", (e) => {
         changeBgUI();
     })
 })
-monthly.addEventListener("click", (e) => {
+
+monthly.addEventListener(useNormal, (e) => {
     e.preventDefault();
     removeSelected();
     monthly.classList.add("selected");
@@ -148,66 +151,134 @@ function removeSelected() {
 
 
 // //! for upgrade to v2
-// monthly.addEventListener("click", (e) => {
-//     e.preventDefault()
-//     removeSelected();
-//     monthly.classList.add("selected");
+daily.addEventListener("click", (e) => {
+    e.preventDefault();
+    removeSelected();
+    daily.classList.add("selected");
+    const cards = document.querySelectorAll(".card");
 
+    cards.forEach((card, index) => {
+        // previousData
+        let startCurrent = Number(card.firstElementChild.lastElementChild.
+            firstElementChild.innerHTML.slice(0, -3))
+        let startPrevious = Number(card.firstElementChild.lastElementChild.
+            lastElementChild.innerHTML.split("-")[1].slice(0, -3))
 
+        getData().then((data) => {
+            const stop = data[index].timeframes.daily.current
+            const previous = data[index].timeframes.daily.previous
 
-//     getData().then((data) => {
-//         // cardContent.innerHTML = "";
-//         const cards = document.querySelectorAll(".card");
-//         data.forEach((data, index) => {
-//             const title = data.title;
-//             const timeframe = data.timeframes.monthly
+            const int = setInterval(() => {
+                if (startCurrent != stop) {
+                    if (startCurrent > stop) {
+                        startCurrent--;
+                    } else {
+                        startCurrent++;
+                    }
+                }
+                if (startPrevious != previous) {
+                    if (startPrevious > previous) {
+                        startPrevious--
+                    } else {
+                        startPrevious++
+                    }
+                }
+                card.firstElementChild.lastElementChild.
+                    firstElementChild.innerHTML = startCurrent + "hrs";
+                card.firstElementChild.lastElementChild.
+                    lastElementChild.innerHTML = `Previous - ${startPrevious}hrs`;
 
-//             const numEl = cards[index].firstElementChild.lastElementChild.
-//                 firstElementChild.innerHTML
-//             let start = 0;
+                if (startCurrent == stop && startPrevious == previous) {
+                    clearInterval(int);
+                }
+            }, 10);
+        })
 
-//             // const newNum = updateNum;
-//             const newNum = 20;
+    })
+});
 
-//             const int = setInterval(() => {
-//                 start += 1;
+weekly.addEventListener("click", (e) => {
+    e.preventDefault();
+    removeSelected();
+    weekly.classList.add("selected");
+    const cards = document.querySelectorAll(".card");
 
-//                 cards[index].firstElementChild.lastElementChild.
-//                     firstElementChild.innerHTML = start + "hrs";
+    cards.forEach((card, index) => {
+        // previousData
+        let startCurrent = Number(card.firstElementChild.lastElementChild.
+            firstElementChild.innerHTML.slice(0, -3))
+        let startPrevious = Number(card.firstElementChild.lastElementChild.
+            lastElementChild.innerHTML.split("-")[1].slice(0, -3))
 
-//                 if (start == newNum) {
-//                     clearInterval(int);
-//                 }
-//             }, 100);
+        getData().then((data) => {
+            const stop = data[index].timeframes.weekly.current
+            const previous = data[index].timeframes.weekly.previous
 
-//         })
-//         // changeBgUI();
-//     })
+            const int = setInterval(() => {
+                if (startCurrent != stop) {
+                    if (startCurrent > stop) {
+                        startCurrent--;
+                    } else {
+                        startCurrent++;
+                    }
+                }
+                if (startPrevious != previous) {
+                    if (startPrevious > previous) {
+                        startPrevious--
+                    } else {
+                        startPrevious++
+                    }
+                }
+                card.firstElementChild.lastElementChild.
+                    firstElementChild.innerHTML = startCurrent + "hrs";
+                card.firstElementChild.lastElementChild.
+                    lastElementChild.innerHTML = `Previous - ${startPrevious}hrs`;
 
-// })
+                if (startCurrent == stop && startPrevious == previous) {
+                    clearInterval(int);
+                }
+            }, 10);
+        })
 
-// function counter(index, updateNum) {
-//     const cards = document.querySelectorAll(".card");
-//     const numEl = cards[0].firstElementChild.lastElementChild.
-//         firstElementChild.innerHTML
-//     let start = 0;
+    })
+})
 
-//     // const newNum = updateNum;
-//     const newNum = 10;
+monthly.addEventListener("click", (e) => {
+    e.preventDefault()
+    removeSelected();
+    monthly.classList.add("selected");
+    const cards = document.querySelectorAll(".card");
 
-//     const int = setInterval(() => {
-//         start += 1;
+    cards.forEach((card, index) => {
+        // previousData
+        let startCurrent = Number(card.firstElementChild.lastElementChild.
+            firstElementChild.innerHTML.slice(0, -3))
+        let startPrevious = Number(card.firstElementChild.lastElementChild.
+            lastElementChild.innerHTML.split("-")[1].slice(0, -3))
 
-//         cards[0].firstElementChild.lastElementChild.
-//             firstElementChild.innerHTML = start + "hrs";
+        getData().then((data) => {
+            // current data
+            const stop = data[index].timeframes.monthly.current
+            const previous = data[index].timeframes.monthly.previous
 
-//         if (start == newNum) {
-//             clearInterval(int);
-//         }
-//     }, 100);
+            const int = setInterval(() => {
+                if (startCurrent != stop) {
+                    startCurrent++;
+                }
+                if (startPrevious != previous) {
+                    startPrevious++
+                }
+                card.firstElementChild.lastElementChild.
+                    firstElementChild.innerHTML = startCurrent + "hrs";
+                card.firstElementChild.lastElementChild.
+                    lastElementChild.innerHTML = `Previous - ${startPrevious}hrs`;
 
-// }
+                if (startCurrent == stop && startPrevious == previous) {
+                    clearInterval(int);
+                }
+            }, 10);
 
-// function changer() {
+        })
 
-// }
+    })
+})
