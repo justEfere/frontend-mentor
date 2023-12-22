@@ -75,6 +75,7 @@ function cardBuilder(action, time, last) {
     </div>
     </div>`;
     cardContainer.appendChild(cardEl);
+    changeBgUI();
 }
 
 // cardBuilder("exercise", 1, 6);
