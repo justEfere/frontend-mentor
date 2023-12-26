@@ -247,6 +247,7 @@ a {
         max-width: 120rem;
         gap: 2rem;
         padding: 2rem;
+        max-height: 80%;
     }
 
     .bg_container {
