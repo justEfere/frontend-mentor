@@ -7,6 +7,20 @@ const customInput = document.getElementById("custom");
 const peopleInput = document.getElementById("people");
 const billAmount = document.getElementById("bill");
 
+tips.forEach(tip => {
+    tip.addEventListener("change", (e) => {
+        customInput.value = "";
+        if (billAmount.value != "" && Number(billAmount.value) != 0) {
+            if (peopleInput.value != "" && Number(peopleInput.value) != 0) {
+                const amount = Number(billAmount.value);
+                const tipPerc = Number(tip.value.replace(/[^0-9]/g, ""));
+                const persons = Number(peopleInput.value);
+                tipCalc(amount, tipPerc, persons);
+            }
+        }
+    })
+})
+
 const resetBtn = document.querySelector(".reset");
 
 resetBtn.addEventListener("click", (e) => {
@@ -38,7 +52,6 @@ billAmount.addEventListener("input", (e) => {
                 const amount = Number(billAmount.value);
                 const tipPerc = Number(checked.value.replace(/[^0-9]/g, ""));
                 const persons = Number(peopleInput.value);
-                console.log(amount, tipPerc, persons);
                 tipCalc(amount, tipPerc, persons);
             } else if (peopleInput.value == "0") {
                 showError(peopleInput, "Can't be zero")
@@ -122,7 +135,6 @@ peopleInput.addEventListener("input", (e) => {
                     const amount = Number(billAmount.value);
                     const tipPerc = Number(checked.value.replace(/[^0-9]/g, ""));
                     const persons = Number(peopleInput.value);
-                    console.log(amount, tipPerc, persons);
                     tipCalc(amount, tipPerc, persons);
                 } else if (peopleInput.value == "0") {
                     showError(peopleInput, "Can't be zero")
