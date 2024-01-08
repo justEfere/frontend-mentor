@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Repo]([https://your-solution-url.com](https://github.com/justEfere/frontend-mentor/tree/main/Notifications-page))
+- Live Site URL: [liveURL]([https://your-live-site-url.com](https://justefere.github.io/frontend-mentor/Notifications-page/))
 
 ## My process
 
