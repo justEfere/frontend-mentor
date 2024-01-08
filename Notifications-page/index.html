@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <title>Frontend Mentor | Notifications page</title>
+
+  <style>
+    .attribution {
+      margin-top: 2rem;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <div class="header">
+      <div class="notification">
+        <h1>Notifications</h1>
+        <p class="counter">3</p>
+      </div>
+      <button class="mark">Mark all as read</button>
+    </div>
+    <div class="notification_container">
+
+      <div class="noti_item unmark">
+        <div class="profile_pic">
+          <img src="assets/images/avatar-mark-webber.webp" alt="mark" class="profile_img">
+        </div>
+        <div class="message">
+          <p class="text">
+            <a href="" class="name-tag">Mark Webber</a> reacted to your recent post <a href="" class="post-tag">My first
+              tournament today!</a>
+            <span class="unread"></span>
+          </p>
+          <p class="time">1m ago</p>
+
+        </div>
+      </div>
+
+      <div class="noti_item unmark">
+        <div class="profile_pic">
+          <img src="assets/images/avatar-angela-gray.webp" alt="mark" class="profile_img">
+        </div>
+        <div class="message">
+          <p class="text">
+            <a href="" class="name-tag">Angela Gray</a> followed you
+            <span class="unread"></span>
+          </p>
+          <p class="time">5m ago</p>
+        </div>
+      </div>
+
+      <div class="noti_item unmark">
+        <div class="profile_pic">
+          <img src="assets/images/avatar-jacob-thompson.webp" alt="mark" class="profile_img">
+        </div>
+        <div class="message">
+          <p class="text">
+            <a href="" class="name-tag">Jacob Thompson</a> has joined your group <a href="" class="group_tag">Chess
+              Club</a>
+            <span class="unread"></span>
+          </p>
+          <p class="time">2 weeks ago</p>
+        </div>
+      </div>
+
+      <div class="noti_item">
+        <div class="profile_pic">
+          <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="mark" class="profile_img">
+        </div>
+        <div class="message">
+          <p class="text">
+            <a href="" class="name-tag">Rizky Hasanuddin</a> sent you a private message
+          </p>
+          <p class="time">5 days ago</p>
+          <p class="close">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+            I'm already having lots of fun and improving my game.
+          </p>
+        </div>
+      </div>
+
+      <div class="noti_item">
+        <div class="profile_pic">
+          <img src="assets/images/avatar-kimberly-smith.webp" alt="mark" class="profile_img">
+        </div>
+        <div class="message">
+          <p class="text">
+            <a href="" class="name-tag">Kimberly Smith</a> commented on your picture
+          </p>
+          <p class="time">1 week ago</p>
+
+        </div>
+      </div>
+
+      <div class="noti_item">
+        <div class="profile_pic">
+          <img src="assets/images/avatar-nathan-peterson.webp" alt="mark" class="profile_img">
+        </div>
+        <div class="message">
+          <p class="text">
+            <a href="" class="name-tag">Nathan Peterson</a> reacted to your recent post <a href="" class="post-tag">5
+              end-game strategies to increase your win rate</a>
+          </p>
+          <p class="time">2 weeks ago</p>
+
+        </div>
+      </div>
+
+      <div class="noti_item">
+        <div class="profile_pic">
+          <img src="assets/images/avatar-anna-kim.webp" alt="mark" class="profile_img">
+        </div>
+        <div class="message">
+          <p class="text">
+            <a href="" class="name-tag">Anna Kim</a> left the group <a href="" class="group_tag">Chess Club</a>
+          </p>
+          <p class="time">2 weeks ago</p>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/justEfere">justefere</a>.
+  </div>
+</body>
+
+</html>
